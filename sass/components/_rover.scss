@@ -1,0 +1,175 @@
+.rover {
+    width: 24px;
+    height: 24px;
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    transform: translate(calc(-50% + 24px), calc(-50% - 24px));
+    background-color: #555;
+
+    &:before {
+        content: '';
+        top: 50%;
+        right: 100%;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        transform: rotate(90deg) skewX(45deg);
+        z-index: 2;
+        background-image: linear-gradient(to bottom, #555, black);
+    }
+
+    &:after {
+        content: '';
+        right: 50%;
+        top: 100%;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        transform: skew(-45deg);
+        z-index: 2;
+        background-image: linear-gradient(to bottom, #555, black);
+    }
+
+    &-fixRight {
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 98%;
+        left: -3%;
+        transform: skewX(-45deg);
+        z-index: 1;
+
+        // Background-color vai mudar
+        background-color: #555;
+    }
+
+    &-fixLeft {
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        right: 53%;
+        transform: rotate(90deg) skewX(45deg);
+        z-index: 1;
+        background-color: #555;
+    }
+}
+
+.rover-selected {
+    width: 24px;
+    height: 24px;
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    transform: translate(calc(-50% + 24px), calc(-50% - 24px));
+    background-color: #e54c4c;
+    z-index: 5;
+
+    &:before {
+        content: '';
+        top: 50%;
+        right: 100%;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        transform: rotate(90deg) skewX(45deg);
+        z-index: 2;
+        background-image: linear-gradient(to bottom, #e54c4c, black);
+    }
+
+    &:after {
+        content: '';
+        right: 50%;
+        top: 100%;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        transform: skew(-45deg);
+        z-index: 2;
+        background-image: linear-gradient(to bottom, #e54c4c, black);
+    }
+
+    &-fixRight {
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 98%;
+        left: -3%;
+        transform: skewX(-45deg);
+        z-index: 1;
+        background-color: #e54c4c;
+    }
+
+    &-fixLeft {
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        right: 53%;
+        transform: rotate(90deg) skewX(45deg);
+        z-index: 1;
+        background-color: #e54c4c;
+    }
+}
+
+.rover-obstacles {
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    transform: translate(calc(-50% + 24px), calc(-50% - 24px));
+    background-color: #000;
+
+    &:before {
+        content: '';
+        top: 50%;
+        right: 100%;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        transform: rotate(90deg) skewX(45deg);
+        z-index: 2;
+        background-color: #000;
+    }
+
+    &:after {
+        content: '';
+        right: 50%;
+        top: 100%;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        transform: skew(-45deg);
+        z-index: 2;
+        background-color: #000;
+    }
+
+    &-fixRight {
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 98%;
+        left: -3%;
+        transform: skewX(-45deg);
+        z-index: 1;
+        background-color: #000;
+    }
+
+    &-fixLeft {
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        right: 53%;
+        transform: rotate(90deg) skewX(45deg);
+        z-index: 1;
+        background-color: #000;
+    }
+}

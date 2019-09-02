@@ -1,0 +1,38 @@
+.indicators {
+    position: absolute;
+    font-size: 64px;
+    color: #eee ;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(30deg) skew(-30deg);
+    font-weight: 700;
+
+    &-north {
+        position: absolute;
+        top: -250px;
+        left: 40px;
+    }
+
+    &-east {
+        position: absolute;
+        right: -460px;
+        top: 60px;
+    }
+
+    &-south {
+        position: absolute;
+        top: 310px;
+        left: 60px;
+    }
+
+    &-west {
+        position: absolute;
+        top: -10px;
+        left: -310px;
+    }
+}
+
+.pointing {
+    color: yellow;
+    text-shadow: 5px 5px 8px rgba(0,0,0,.4);
+}

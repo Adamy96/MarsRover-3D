@@ -1,0 +1,11 @@
+{
+  "name": "marsrover3d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss main.css -w"
+  },
+  "author": "Adamy",
+  "license": "ISC"
+}
